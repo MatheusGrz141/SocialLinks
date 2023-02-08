@@ -63,6 +63,7 @@ body * {
   margin: 15px auto 0px;
 }
 #switch button {
+  animation: slide-out 0.5s;
   width: 32px;
   height: 32px;
   background-image: var(--switch-bg);
@@ -75,8 +76,12 @@ body * {
   top: 50%;
   right: 0;
 }
+#switch button :hover {
+  transition: background 0.2s;
+}
+
 .light #switch button {
-  left: 0;
+  animation: slide-in 0.5s forwards;
 }
 #switch span {
   display: block;
@@ -148,10 +153,26 @@ ul li a:hover {
 @media (max-width: 700px) {
   :root {
     --bg-url: url(./images/bk_android_moon.webp);
-   height: 100vh;
+    height: 100vh;
   }
   .light {
     --bg-url: url(./images/bk_light.jpg);
     height: 100vh;
+  }
+}
+@keyframes slide-in {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
   }
 }
