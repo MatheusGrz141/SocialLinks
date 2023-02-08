@@ -12,6 +12,7 @@
   --high-light-color: rgba(255, 255, 255, 0.2);
   --border-color: rgb(255, 255, 255);
   --switch-bg: url(./images/moon-outline.svg);
+  
 }
 .light {
   --text-color: black;
@@ -26,9 +27,11 @@
 
 body {
   background-image: var(--bg-url);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
+  background-repeat:repeat;
+  background-size: var(--surface-color-houver);
+ background-size: cover;
+  
+  
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -36,7 +39,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   /*border: 1px solid red;*/
   margin: auto;
   padding: 0 24px;
