@@ -12,7 +12,6 @@
   --high-light-color: rgba(255, 255, 255, 0.2);
   --border-color: rgb(255, 255, 255);
   --switch-bg: url(./images/moon-outline.svg);
-  
 }
 .light {
   --text-color: black;
@@ -27,11 +26,9 @@
 
 body {
   background-image: var(--bg-url);
-  background-repeat:repeat;
+  background-repeat: no-repeat;
   background-size: var(--surface-color-houver);
- background-size: cover;
-  
-  
+  background-size: cover;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -78,7 +75,7 @@ body * {
   top: 50%;
   right: 0;
 }
-.light #switch button{
+.light #switch button {
   left: 0;
 }
 #switch span {
@@ -147,4 +144,14 @@ ul li a:hover {
   justify-content: center;
   gap: 5px;
   font-size: 14px;
+}
+@media (max-width: 700px) {
+  :root {
+    --bg-url: url(./images/bk_android_moon.webp);
+   height: 100vh;
+  }
+  .light {
+    --bg-url: url(./images/bk_light.jpg);
+    height: 100vh;
+  }
 }
