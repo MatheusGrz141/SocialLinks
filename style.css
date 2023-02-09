@@ -28,8 +28,6 @@ body {
   background-image: var(--bg-url);
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 100vh;
-  min-height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -160,6 +158,18 @@ ul li a:hover {
     --bg-url: url(./images/bk_light_mobile.jpg);
     height: 100vh;
   }
+}
+@media (min-width: 700px) {
+
+  :root {
+    min-width: 100vh;
+    min-height: 100vh;
+  }
+  .light {
+    min-width: 100vh;
+    min-height: 100vh;
+  }
+
 }
 @keyframes slide-in {
   from {
