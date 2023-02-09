@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 :root {
-  --text-color: black;
-  --bg-url: url(./images/bk_light.jpg);
-  --stroke-color: rgba(0, 0, 0, 0.418);
-  --surface-color: rgb(0, 0, 0, 0.1);
-  --surface-color-houver: rgba(0, 0, 0, 0.02);
-  --high-light-color: rgba(0, 0, 0, 0.1);
-  --border-color: rgb(0, 0, 0);
-  --switch-bg: url(./images/sunny-outline.svg);
-}
-.light {
   --text-color: rgb(255, 255, 255);
   --bg-url: url(./images/bk.jpg);
   --stroke-color: rgba(142, 138, 138, 0.479);
@@ -22,6 +12,16 @@
   --high-light-color: rgba(255, 255, 255, 0.2);
   --border-color: rgb(255, 255, 255);
   --switch-bg: url(./images/moon-outline.svg);
+}
+.light {
+  --text-color: black;
+  --bg-url: url(./images/bk_light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.418);
+  --surface-color: rgb(0, 0, 0, 0.1);
+  --surface-color-houver: rgba(0, 0, 0, 0.02);
+  --high-light-color: rgba(0, 0, 0, 0.1);
+  --border-color: rgb(0, 0, 0);
+  --switch-bg: url(./images/sunny-outline.svg);
 }
 
 body {
@@ -152,11 +152,11 @@ ul li a:hover {
 }
 @media (max-width: 700px) {
   :root {
-    --bg-url: url(./images/bk_light_mobile.jpg);
+    --bg-url: url(./images/bk_android_moon.webp);
     height: 100vh;
   }
   .light {
-    --bg-url: url(./images/bk_android_moon.webp);
+    --bg-url: url(./images/bk_light_mobile.jpg);
     height: 100vh;
   }
 }
