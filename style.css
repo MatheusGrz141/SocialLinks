@@ -27,8 +27,9 @@
 body {
   background-image: var(--bg-url);
   background-repeat: no-repeat;
-  background-size: var(--surface-color-houver);
   background-size: cover;
+  min-width: 100vh;
+  min-height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
