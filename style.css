@@ -121,9 +121,9 @@ ul li a {
   font-size: 20px;
 }
 ul li a:hover {
-  padding: 16px 24px;
+  transform: scale(1.05);
   background: var(--surface-color-hover);
-  border: 1.5px solid var(--border-color);
+  border: 1px solid var(--border-color);
 }
 #social-links {
   display: flex;
