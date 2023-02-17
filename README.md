@@ -34,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 projeto feito para ser um agregador de links para ser usado cartão de visita online.
 
-
+- [Visite o projeto online](https://matheusgrz141.github.io/SocialLinks/)
 
 ## :memo: Licença
 
