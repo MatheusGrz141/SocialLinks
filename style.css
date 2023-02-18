@@ -123,7 +123,7 @@ ul li a {
 ul li a:hover {
   transform: scale(1.05);
   background: var(--surface-color-hover);
-  border: 1px solid var(--border-color);
+ 
 }
 #social-links {
   display: flex;
