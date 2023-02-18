@@ -14,7 +14,7 @@
   --switch-bg: url(./images/moon-outline.svg);
 }
 .light {
-  --text-color: black;
+  --text-color: rgb(0, 0, 0);
   --bg-url: url(./images/bk_light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.418);
   --surface-color: rgb(0, 0, 0, 0.1);
@@ -101,7 +101,7 @@ ul {
   padding: 24px 0;
 }
 ul li a {
-  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(58, 57, 57,0.5);
   display: flex;
   justify-content: center;
   /*display: block;
@@ -109,7 +109,7 @@ ul li a {
   align-items: center;
   padding: 16px 24px;
   background: var(surface-color);
-  border: 1px solid var(--stroke-color);
+  border: 2px solid var(--stroke-color);
   border-radius: 8px;
   backdrop-filter: blur (4px);
   font-style: normal;
