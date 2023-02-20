@@ -102,6 +102,7 @@ ul {
   padding: 24px 0;
 }
 ul li a {
+ 
   background-color: rgba(58, 57, 57,0.5);
   display: flex;
   box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
@@ -156,11 +157,9 @@ ul li a:hover {
 }
 @media (max-width: 700px) {
   :root {
-    --bg-url: url(./images/bk_android_moon.webp);
     height: 100vh;
   }
   .light {
-    --bg-url: url(./images/bk_light_mobile.jpg);
     height: 100vh;
   }
 }
