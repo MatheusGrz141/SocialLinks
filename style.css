@@ -5,29 +5,28 @@
 }
 :root {
   --text-color: rgb(255, 255, 255);
-  --bg-url: url(./images/bk.jpg);
+  --bg-color:rgb(21, 30, 27);
   --stroke-color: rgba(142, 138, 138, 0.479);
   --surface-color: rgb(255, 255, 255, 0.1);
   --surface-color-houver: rgba(255, 255, 255, 0.02);
   --high-light-color: rgba(255, 255, 255, 0.2);
   --border-color: rgb(255, 255, 255);
-  --switch-bg: url(./images/moon-outline.svg);
+ 
 }
 .light {
   --text-color: rgb(0, 0, 0);
-  --bg-url: url(./images/bk_light.jpg);
+  --bg-color:rgb(136, 151, 184);
   --stroke-color: rgba(0, 0, 0, 0.418);
   --surface-color: rgb(0, 0, 0, 0.1);
   --surface-color-houver: rgba(0, 0, 0, 0.02);
   --high-light-color: rgba(0, 0, 0, 0.1);
   --border-color: rgb(0, 0, 0);
-  --switch-bg: url(./images/sunny-outline.svg);
+
 }
 
 body {
-  background-image: var(--bg-url);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--bg-color);
+
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -45,6 +44,7 @@ body * {
   text-align: center;
 }
 #profile img {
+  border-radius: 50%;
   text-align: center;
   width: 112px;
 }
@@ -94,6 +94,7 @@ body * {
 }
 /*links*/
 ul {
+  
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -103,6 +104,7 @@ ul {
 ul li a {
   background-color: rgba(58, 57, 57,0.5);
   display: flex;
+  box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
   justify-content: center;
   /*display: block;
     text-align: center;*/
