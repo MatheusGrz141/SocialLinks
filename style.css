@@ -4,26 +4,30 @@
   box-sizing: border-box;
 }
 :root {
-  --bg-color: rgb(0, 8, 6);
   --text-color: rgb(255, 255, 255);
+  --bg-color: rgb(24, 26, 24);
   --stroke-color: rgba(142, 138, 138, 0.479);
   --surface-color: rgb(255, 255, 255, 0.1);
   --surface-color-houver: rgba(255, 255, 255, 0.02);
   --high-light-color: rgba(255, 255, 255, 0.2);
   --border-color: rgb(255, 255, 255);
+  --switch-bg: url(./images/moon-outline.svg);
 }
 .light {
-  --bg-color: rgb(216, 221, 233);
-  --text-color: rgb(0, 0, 0);
+  --text-color: black;
+  --bg-color: rgb(172, 177, 173);
   --stroke-color: rgba(0, 0, 0, 0.418);
   --surface-color: rgb(0, 0, 0, 0.1);
   --surface-color-houver: rgba(0, 0, 0, 0.02);
   --high-light-color: rgba(0, 0, 0, 0.1);
   --border-color: rgb(0, 0, 0);
+  --switch-bg: url(./images/sunny-outline.svg);
 }
 
 body {
   background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -41,9 +45,9 @@ body * {
   text-align: center;
 }
 #profile img {
-  border-radius: 50%;
   text-align: center;
   width: 112px;
+  border-radius: 50%;
 }
 #profile a {
   margin: 8px;
@@ -96,20 +100,17 @@ ul {
   flex-direction: column;
   gap: 16px;
   padding: 24px 0;
-  margin: auto;
-
 }
 ul li a {
-  background-color: rgba(58, 57, 57, 0.5);
+  border: 1px solid rgb(0, 0, 0);
   display: flex;
-  box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
   justify-content: center;
   /*display: block;
     text-align: center;*/
   align-items: center;
   padding: 16px 24px;
   background: var(surface-color);
-  border: 2px solid var(--stroke-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
   backdrop-filter: blur (4px);
   font-style: normal;
@@ -122,8 +123,7 @@ ul li p {
   font-size: 20px;
 }
 ul li a:hover {
- 
-  background: var(--surface-color-hover);
+  transform: scale(1.03);
 }
 #social-links {
   display: flex;
@@ -154,9 +154,11 @@ ul li a:hover {
 }
 @media (max-width: 700px) {
   :root {
+    --bg-url: url(./images/bk_android_moon.webp);
     height: 100vh;
   }
   .light {
+    --bg-url: url(./images/bk_light_mobile.jpg);
     height: 100vh;
   }
 }
