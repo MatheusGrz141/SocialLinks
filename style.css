@@ -96,6 +96,8 @@ ul {
   flex-direction: column;
   gap: 16px;
   padding: 24px 0;
+  margin: auto;
+  max-width: 60%;
 }
 ul li a {
   background-color: rgba(58, 57, 57, 0.5);
