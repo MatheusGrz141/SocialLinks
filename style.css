@@ -97,7 +97,7 @@ ul {
   gap: 16px;
   padding: 24px 0;
   margin: auto;
-  max-width: 60%;
+
 }
 ul li a {
   background-color: rgba(58, 57, 57, 0.5);
@@ -122,7 +122,7 @@ ul li p {
   font-size: 20px;
 }
 ul li a:hover {
-  transform: scale(1.05);
+ 
   background: var(--surface-color-hover);
 }
 #social-links {
