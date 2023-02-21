@@ -36,9 +36,8 @@ projeto feito para ser um agregador de links para ser usado cartão de visita on
 
 
 
+- [Visite o projeto online](https://matheusgrz141.github.io/SocialLinks)
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
-
-# teste
-# bla
